@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Edukasi & Simulasi Kapasitor - Radya Khoirunnisa</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .fan-blade {
+            transform-origin: center;
+            transition: transform 0.1s linear;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Header / Navbar -->
+    <header class="bg-indigo-700 text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-3 mb-2 md:mb-0">
+                <div class="bg-white text-indigo-700 p-2 rounded-lg font-bold text-xl shadow">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold">Portal Kapasitor Fisika</h1>
+                    <p class="text-xs text-indigo-200">Pengembang: <span class="font-semibold text-white">Radya Khoirunnisa</span></p>
+                </div>
+            </div>
+            <nav class="flex flex-wrap gap-3 md:gap-4 text-sm font-medium">
+                <a href="#pengertian" class="hover:text-indigo-200 transition">Pengertian</a>
+                <a href="#struktur" class="hover:text-indigo-200 transition">Struktur</a>
+                <a href="#rumus" class="hover:text-indigo-200 transition">Rumus & Soal</a>
+                <a href="#jenis" class="hover:text-indigo-200 transition">Jenis</a>
+                <a href="#kalkulator" class="hover:text-indigo-200 transition">Kalkulator</a>
+                <a href="#kuis" class="hover:text-indigo-200 transition">Kuis</a>
+                <a href="#simulasi" class="hover:text-indigo-200 transition">Simulasi Kipas</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-indigo-800 to-blue-700 text-white py-16 px-4 text-center">
+        <div class="max-w-3xl mx-auto">
+            <span class="bg-indigo-600 text-indigo-100 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Media Pembelajaran Fisika Interaktif</span>
+            <h2 class="text-3xl md:text-5xl font-extrabold mt-4 mb-4">Edukasi & Simulasi Kapasitor Lengkap</h2>
+            <p class="text-indigo-100 text-base md:text-lg mb-8">Pelajari pengertian, struktur fisik, rumus, perhitungan kalkulator, kuis latihan, hingga simulasi nyata fungsi kapasitor pada kipas angin.</p>
+            <a href="#pengertian" class="bg-white text-indigo-700 font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-indigo-50 transition">Mulai Jelajahi <i class="fa-solid fa-arrow-down ml-2"></i></a>
+        </div>
+    </section>
+
+    <!-- Main Content Container -->
+    <main class="max-w-5xl mx-auto px-4 py-10 space-y-16">
+
+        <!-- 1. Pengertian Kapasitor -->
+        <section id="pengertian" class="bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-slate-100">
+            <div class="flex items-center space-x-3 mb-6">
+                <div class="bg-indigo-100 text-indigo-700 p-3 rounded-xl"><i class="fa-solid fa-book-open text-xl"></i></div>
+                <h3 class="text-2xl font-bold text-slate-900">Pengertian Kapasitor</h3>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="space-y-4 text-slate-600 leading-relaxed">
+                    <p>
+                        <strong>Kapasitor</strong> (atau sering juga disebut kondensator) adalah komponen elektronika pasif yang dirancang khusus untuk menyimpan muatan listrik dalam waktu sementara melalui medan listrik.
+                    </p>
+                    <p>
+                        Kapasitor dapat menahan muatan listrik dan melepaskannya kembali saat dibutuhkan. Komponen ini sangat penting dan banyak digunakan dalam berbagai perangkat elektronik, mulai dari rangkaian radio, catu daya (power supply), hingga motor penggerak seperti pada kipas angin dan pompa air.
+                    </p>
+                    <div class="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded-r-lg text-sm text-indigo-900">
+                        <strong>Satuan Internasional (SI):</strong> Kapasitansi kapasitor diukur dalam satuan <strong>Farad (F)</strong>.
+                    </div>
+                </div>
+                <div class="bg-slate-100 rounded-xl p-6 text-center border border-slate-200 flex flex-col items-center justify-center">
+                    <i class="fa-solid fa-microchip text-6xl text-indigo-600 mb-3"></i>
+                    <h4 class="font-bold text-slate-800">Komponen Penyimpan Energi</h4>
+                    <p class="text-sm text-slate-500 mt-2">Menyimpan energi listrik secara statis tanpa menghasilkan reaksi kimia di dalamnya (berbeda dengan baterai).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Struktur Kapasitor -->
+        <section id="struktur" class="bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-slate-100">
+            <div class="flex items-center space-x-3 mb-6">
+                <div class="bg-indigo-100 text-indigo-700 p-3 rounded-xl"><i class="fa-solid fa-layer-group text-xl"></i></div>
+                <h3 class="text-2xl font-bold text-slate-900">Struktur Fisik & Bagian Kapasitor</h3>
+            </div>
+            <p class="text-slate-600 mb-6">Secara umum, struktur dasar sebuah kapasitor keping sejajar terdiri dari tiga komponen utama:</p>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+                    <div class="text-indigo-600 font-bold text-lg mb-2"><i class="fa-solid fa-square mr-2"></i>1. Plat Konduktor</div>
+                    <p class="text-sm text-slate-600">Dua buah lempengan atau plat logam konduktor yang saling berhadapan sejajar. Plat ini berfungsi sebagai tempat terkumpulnya muatan listrik positif dan negatif.</p>
+                </div>
+                <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+                    <div class="text-indigo-600 font-bold text-lg mb-2"><i class="fa-solid fa-shield-halved mr-2"></i>2. Bahan Dielektrik</div>
+                    <p class="text-sm text-slate-600">Lapisan bahan isolator yang berada di antara kedua plat konduktor. Berfungsi sebagai penyekat sekaligus memperbesar kapasitas kapasitor. Contoh bahan: keramik, udara, mika, kertas, atau plastik.</p>
+                </div>
+                <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+                    <div class="text-indigo-600 font-bold text-lg mb-2"><i class="fa-solid fa-plug mr-2"></i>3. Kaki Terminal</div>
+                    <p class="text-sm text-slate-600">Dua kawat konduktor terminal yang keluar dari masing-masing plat, digunakan untuk menghubungkan kapasitor ke dalam suatu rangkaian listrik luar.</p>
+                </div>
+            </div>
+
+            <div class="bg-indigo-50 rounded-xl p-5 border border-indigo-100 text-center text-sm text-indigo-900">
+                <span class="font-bold">Tahukah Anda?</span> Semakin luas permukaan plat (A) dan semakin dekat jarak antar plat (d), maka nilai kapasitas kapasitor (C) akan semakin besar.
+            </div>
+        </section>
+
+        <!-- 3. Rumus & Contoh Soal -->
+        <section id="rumus" class="bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-slate-100">
+            <div class="flex items-center space-x-3 mb-6">
+                <div class="bg-indigo-100 text-indigo-700 p-3 rounded-xl"><i class="fa-solid fa-square-root-variable text-xl"></i></div>
+                <h3 class="text-2xl font-bold text-slate-900">Rumus & Contoh Soal Kapasitor</h3>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 text-center">
+                    <h4 class="font-semibold text-indigo-700 mb-2">Kapasitansi Dasar</h4>
+                    <p class="text-xl font-bold text-slate-800 my-2">C = Q / V</p>
+                    <p class="text-xs text-slate-500">C = Kapasitansi (Farad)<br>Q = Muatan (Coulomb)<br>V = Tegangan (Volt)</p>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 text-center">
+                    <h4 class="font-semibold text-indigo-700 mb-2">Kapasitor Keping Sejajar</h4>
+                    <p class="text-xl font-bold text-slate-800 my-2">C = &epsilon;₀ · (A / d)</p>
+                    <p class="text-xs text-slate-500">A = Luas Plat (m²)<br>d = Jarak antar plat (m)<br>&epsilon;₀ = Permitivitas vakum</p>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 text-center">
+                    <h4 class="font-semibold text-indigo-700 mb-2">Energi Tersimpan</h4>
+                    <p class="text-xl font-bold text-slate-800 my-2">W = ½ · C · V²</p>
+                    <p class="text-xs text-slate-500">W = Energi (Joule)<br>C = Kapasitansi (F)<br>V = Tegangan (V)</p>
+                </div>
+            </div>
+
+            <div class="bg-amber-50 border border-amber-200 rounded-xl p-5">
+                <h4 class="font-bold text-amber-900 mb-2"><i class="fa-solid fa-lightbulb mr-2"></i>Contoh Soal</h4>
+                <p class="text-sm text-amber-800 mb-3">Sebuah kapasitor memiliki kapasitas sebesar <strong>4 µF</strong> dan dihubungkan dengan sumber tegangan <strong>12 Volt</strong>. Berapakah besar muatan listrik (Q) serta energi (W) yang tersimpan di dalam kapasitor tersebut?</p>
+                <div class="bg-white p-3 rounded border border-amber-200 text-sm text-slate-700 space-y-1">
+                    <strong>Penyelesaian:</strong><br>
+                    Diketahui: C = 4 µF = 4 × 10⁻⁶ F, V = 12 V<br>
+                    1. Muatan (Q) = C × V = (4 × 10⁻⁶) × 12 = <strong>4,8 × 10⁻⁵ Coulomb</strong>.<br>
+                    2. Energi (W) = ½ · C · V² = ½ · (4 × 10⁻⁶) · (12)² = <strong>2,88 × 10⁻⁴ Joule</strong>.
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Jenis-Jenis Kapasitor -->
+        <section id="jenis" class="bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-slate-100">
+            <div class="flex items-center space-x-3 mb-6">
+                <div class="bg-indigo-100 text-indigo-700 p-3 rounded-xl"><i class="fa-solid fa-grip-vertical text-xl"></i></div>
+                <h3 class="text-2xl font-bold text-slate-900">Jenis-Jenis Kapasitor</h3>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="border border-slate-200 rounded-xl p-5 hover:shadow-md transition">
+                    <div class="text-indigo-600 font-bold text-lg mb-2">Kapasitor Keramik</div>
+                    <p class="text-sm text-slate-600">Tidak berpolaritas (+/-). Berbentuk kecil pipih, cocok digunakan untuk rangkaian frekuensi tinggi atau bypass.</p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-5 hover:shadow-md transition">
+                    <div class="text-indigo-600 font-bold text-lg mb-2">Kapasitor Elektrolit (Elco)</div>
+                    <p class="text-sm text-slate-600">Memiliki kutub positif dan negatif (+ dan -). Kapasitasnya besar, biasa dipakai pada rangkaian adaptor/catu daya.</p>
+                </div>
+                <div class="border border-slate-200 rounded-xl p-5 hover:shadow-md transition">
+                    <div class="text-indigo-600 font-bold text-lg mb-2">Kapasitor Film</div>
+                    <p class="text-sm text-slate-600">Menggunakan bahan plastik film sebagai dielektriknya. Sangat stabil terhadap perubahan suhu dan frekuensi.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Kalkulator Kapasitor Interaktif -->
+        <section id="kalkulator" class="bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-slate-100">
+            <div class="flex items-center space-x-3 mb-6">
+                <div class="bg-indigo-100 text-indigo-700 p-3 rounded-xl"><i class="fa-solid fa-calculator text-xl"></i></div>
+                <h3 class="text-2xl font-bold text-slate-900">Kalkulator Muatan & Energi</h3>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-4">
+                    <h4 class="font-semibold text-slate-800">Masukkan Nilai Parameter:</h4>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-600 mb-1">Kapasitansi (C dalam satuan mikroFarad / µF)</label>
+                        <input type="number" id="calcC" class="w-full border border-slate-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-indigo-500 focus:outline-none" placeholder="Contoh: 10">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-600 mb-1">Tegangan (V dalam satuan Volt)</label>
+                        <input type="number" id="calcV" class="w-full border border-slate-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-indigo-500 focus:outline-none" placeholder="Contoh: 12">
+                    </div>
+                    <button onclick="hitungKapasitor()" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2.5 rounded-lg transition shadow">Hitung Otomatis</button>
+                </div>
+
+                <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 flex flex-col justify-center">
+                    <h4 class="font-bold text-slate-800 mb-4">Hasil Perhitungan:</h4>
+                    <div id="hasilKalkulator" class="space-y-2 text-slate-600 text-sm">
+                        <p>Silakan isi nilai C dan V di samping lalu tekan tombol hitung.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Kuis 3 Nomor -->
+        <section id="kuis" class="bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-slate-100">
+            <div class="flex items-center space-x-3 mb-6">
+                <div class="bg-indigo-100 text-indigo-700 p-3 rounded-xl"><i class="fa-solid fa-clipboard-question text-xl"></i></div>
+                <h3 class="text-2xl font-bold text-slate-900">Kuis Pemahaman (3 Soal)</h3>
+            </div>
+
+            <form id="quizForm" class="space-y-8">
+                <!-- Soal 1 -->
+                <div class="border-b border-slate-200 pb-6">
+                    <p class="font-semibold text-slate-800 mb-3">1. Apakah fungsi utama dari bahan dielektrik di dalam struktur sebuah kapasitor?</p>
+                    <div class="space-y-2 text-sm">
+                        <label class="flex items-center space-x-3 cursor-pointer"><input type="radio" name="q1" value="A" class="text-indigo-600"> <span>Menghantarkan arus listrik utama ke beban</span></label>
+                        <label class="flex items-center space-x-3 cursor-pointer"><input type="radio" name="q1" value="B" class="text-indigo-600"> <span>Sebagai bahan penyekat isolator dan memperbesar kapasitas simpan</span></label>
+                        <label class="flex items-center space-x-3 cursor-pointer"><input type="radio" name="q1" value="C" class="text-indigo-600"> <span>Mengubah tegangan AC menjadi DC secara instan</span></label>
+                    </div>
+                </div>
+
+                <!-- Soal 2 -->
+                <div class="border-b border-slate-200 pb-6">
+                    <p class="font-semibold text-slate-800 mb-3">2. Satuan internasional untuk kapasitas kapasitansi adalah...</p>
+                    <div class="space-y-2 text-sm">
+                        <label class="flex items-center space-x-3 cursor-pointer"><input type="radio" name="q2" value="A" class="text-indigo-600"> <span>Volt (V)</span></label>
+                        <label class="flex items-center space-x-3 cursor-pointer"><input type="radio" name="q2" value="B" class="text-indigo-600"> <span>Ampere (A)</span></label>
+                        <label class="flex items-center space-x-3 cursor-pointer"><input type="radio" name="q2" value="C" class="text-indigo-600"> <span>Farad (F)</span></label>
+                    </div>
+                </div>
+
+                <!-- Soal 3 -->
+                <div class="pb-4">
+                    <p class="font-semibold text-slate-800 mb-3">3. Jika sebuah kapasitor berukuran 2 µF diberi tegangan 10 Volt, berapakah besar energi listrik (W) yang tersimpan?</p>
+                    <div class="space-y-2 text-sm">
+                        <label class="flex items-center space-x-3 cursor-pointer"><input type="radio" name="q3" value="A" class="text-indigo-600"> <span>10⁻⁴ Joule</span></label>
+                        <label class="flex items-center space-x-3 cursor-pointer"><input type="radio" name="q3" value="B" class="text-indigo-600"> <span>20 Joule</span></label>
+                        <label class="flex items-center space-x-3 cursor-pointer"><input type="radio" name="q3" value="C" class="text-indigo-600"> <span>100 Joule</span></label>
+                    </div>
+                </div>
+
+                <button type="button" onclick="cekKuis()" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-2.5 rounded-lg transition shadow">Periksa Jawaban Kuis</button>
+            </form>
+
+            <div id="hasilKuis" class="mt-6 hidden p-4 rounded-xl font-semibold text-center"></div>
+        </section>
+
+        <!-- 7. Simulasi Kapasitor di Kipas Angin -->
+        <section id="simulasi" class="bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-slate-100">
+            <div class="flex items-center space-x-3 mb-6">
+                <div class="bg-indigo-100 text-indigo-700 p-3 rounded-xl"><i class="fa-solid fa-fan text-xl"></i></div>
+                <h3 class="text-2xl font-bold text-slate-900">Simulasi Kapasitor pada Kipas Angin</h3>
+            </div>
+            
+            <p class="text-slate-600 mb-6">
+                Pada kipas angin AC, kapasitor (run capacitor) dipakai untuk memberikan torsi awal dan menjaga kestabilan medan magnet motor. Coba ubah nilai kapasitas kapasitor di bawah ini dan nyalakan kipas untuk melihat efek putarannya!
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-8 items-center bg-slate-50 p-6 rounded-xl border border-slate-200">
+                <!-- Kontrol -->
+                <div class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-2">Saklar Kipas:</label>
+                        <button id="btnPower" onclick="toggleFanPower()" class="bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-2.5 rounded-lg transition shadow">
+                            <i class="fa-solid fa-power-off mr-2"></i> Mati (OFF)
+                        </button>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">Nilai Kapasitor: <span id="valCapacitor" class="font-bold text-indigo-600">1.5</span> µF</label>
+                        <input type="range" id="rangeCap" min="0.2" max="3.0" step="0.1" value="1.5" oninput="updateFanSimulation()" class="w-full accent-indigo-600">
+                        <div class="flex justify-between text-xs text-slate-400 mt-1">
+                            <span>0.2 µF (Lemah / Rusak)</span>
+                            <span>1.5 µF (Normal)</span>
+                            <span>3.0 µF (Berlebih)</span>
+                        </div>
+                    </div>
+
+                    <div id="fanStatusText" class="text-sm bg-white p-4 rounded-lg border border-slate-200 text-slate-700">
+                        Kipas dalam keadaan mati. Silakan nyalakan saklar untuk memulai simulasi.
+                    </div>
+                </div>
+
+                <!-- Visual Kipas -->
+                <div class="flex flex-col items-center justify-center p-6 bg-white rounded-xl border border-slate-200 shadow-inner">
+                    <div class="relative w-40 h-40 flex items-center justify-center bg-indigo-50 rounded-full border-4 border-indigo-200 shadow">
+                        <div id="fanIcon" class="fan-blade text-6xl text-indigo-600">
+                            <i class="fa-solid fa-fan"></i>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-4 text-center">Animasi interaktif motor induksi AC kipas angin.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 px-4 mt-20 text-center border-t border-slate-800">
+        <div class="max-w-4xl mx-auto space-y-2">
+            <p class="font-semibold text-white">Portal Pembelajaran Fisika - Kapasitor</p>
+            <p class="text-sm">Dikembangkan oleh <span class="text-indigo-400 font-medium">Radya Khoirunnisa</span> &copy; 2026</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Interaktif -->
+    <script>
+        // 1. Kalkulator
+        function hitungKapasitor() {
+            let c = parseFloat(document.getElementById('calcC').value);
+            let v = parseFloat(document.getElementById('calcV').value);
+            let hasilDiv = document.getElementById('hasilKalkulator');
+
+            if (isNaN(c) || isNaN(v)) {
+                hasilDiv.innerHTML = `<p class="text-red-500 font-medium">Mohon masukkan angka valid untuk C dan V.</p>`;
+                return;
+            }
+
+            let cFarad = c * 1e-6;
+            let qCoulomb = cFarad * v;
+            let wJoule = 0.5 * cFarad * Math.pow(v, 2);
+
+            hasilDiv.innerHTML = `
+                <p>Muatan Listrik (Q): <strong class="text-indigo-600">${qCoulomb.toExponential(3)} Coulomb</strong></p>
+                <p>Energi Tersimpan (W): <strong class="text-indigo-600">${wJoule.toExponential(3)} Joule</strong></p>
+                <p class="text-xs text-slate-400 mt-2">Dihitung otomatis via rumus Q = C × V dan W = ½CV².</p>
+            `;
+        }
+
+        // 2. Kuis
+        function cekKuis() {
+            let q1 = document.querySelector('input[name="q1"]:checked');
+            let q2 = document.querySelector('input[name="q2"]:checked');
+            let q3 = document.querySelector('input[name="q3"]:checked');
+            let hasilKuis = document.getElementById('hasilKuis');
+
+            if (!q1 || !q2 || !q3) {
+                hasilKuis.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'bg-red-100', 'text-red-800');
+                hasilKuis.classList.add('bg-yellow-100', 'text-yellow-800');
+                hasilKuis.innerHTML = "Harap jawab semua soal kuis (nomor 1 sampai 3) terlebih dahulu!";
+                return;
+            }
+
+            let skor = 0;
+            if (q1.value === 'B') skor++;
+            if (q2.value === 'C') skor++;
+            if (q3.value === 'A') skor++; // W = 0.5 * 2e-6 * 10^2 = 10^-4 Joule
+
+            hasilKuis.classList.remove('hidden', 'bg-yellow-100', 'text-yellow-800');
+            if (skor === 3) {
+                hasilKuis.className = "mt-6 p-4 rounded-xl font-semibold text-center bg-green-100 text-green-800";
+                hasilKuis.innerHTML = `🎉 Luar Biasa! Jawaban Anda benar semua (Skor: 3/3). Pemahaman materi kapasitor Anda sangat sempurna!`;
+            } else {
+                hasilKuis.className = "mt-6 p-4 rounded-xl font-semibold text-center bg-red-100 text-red-800";
+                hasilKuis.innerHTML = `⚠️ Skor Anda: ${skor}/3. Silakan pelajari kembali materi struktur, satuan, dan rumus di atas.`;
+            }
+        }
+
+        // 3. Simulasi Kipas
+        let isFanOn = false;
+        let fanSpeed = 1.5;
+
+        function toggleFanPower() {
+            isFanOn = !isFanOn;
+            let btn = document.getElementById('btnPower');
+            if (isFanOn) {
+                btn.className = "bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-2.5 rounded-lg transition shadow";
+                btn.innerHTML = '<i class="fa-solid fa-power-off mr-2"></i> Nyala (ON)';
+            } else {
+                btn.className = "bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-2.5 rounded-lg transition shadow";
+                btn.innerHTML = '<i class="fa-solid fa-power-off mr-2"></i> Mati (OFF)';
+            }
+            updateFanSimulation();
+        }
+
+        function updateFanSimulation() {
+            fanSpeed = parseFloat(document.getElementById('rangeCap').value);
+            document.getElementById('valCapacitor').innerText = fanSpeed.toFixed(1);
+
+            let fanIcon = document.getElementById('fanIcon');
+            let statusText = document.getElementById('fanStatusText');
+
+            if (!isFanOn) {
+                fanIcon.style.animation = 'none';
+                statusText.innerHTML = "Kipas dalam keadaan mati. Silakan nyalakan saklar untuk memulai simulasi.";
+                return;
+            }
+
+            let animDuration = 1.0;
+            let info = "";
+
+            if (fanSpeed < 0.6) {
+                animDuration = 3.0;
+                info = `<span class="text-amber-600 font-semibold">⚠️ Kapasitor terlalu lemah (${fanSpeed} µF)!</span> Torsi motor kurang, baling-baling berputar sangat lambat atau hanya berdengung.`;
+            } else if (fanSpeed >= 0.6 && fanSpeed <= 2.2) {
+                animDuration = Math.max(0.1, 0.8 - (fanSpeed * 0.15));
+                info = `<span class="text-green-600 font-semibold">✅ Kapasitor ideal & normal (${fanSpeed} µF)!</span> Geseran fasa optimal, kipas berputar kencang dan stabil.`;
+            } else {
+                animDuration = 0.08;
+                info = `<span class="text-red-600 font-semibold">⚡ Kapasitor terlalu besar (${fanSpeed} µF)!</span> Arus induksi berlebih membuat putaran terlalu agresif dan motor berisiko cepat panas/rusak.`;
+            }
+
+            fanIcon.style.animation = `spin ${animDuration}s linear infinite`;
+            statusText.innerHTML = info;
+        }
+    </script>
+    
+    <!-- CSS Animation -->
+    <style>
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</body>
+</html>
